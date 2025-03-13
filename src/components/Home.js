@@ -89,7 +89,7 @@ function Home() {
         <a href="/services" className="btn btn-lg btn-primary">Explore Courses</a>
       </div>
     </div>
-  );
+  ); 
 }
 
 export default Home;
