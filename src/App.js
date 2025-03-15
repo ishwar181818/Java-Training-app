@@ -8,6 +8,8 @@ import Contact from "./components/Contact";
 import CourseDetails from "./components/CourseDetails";
 import TeachingMode from "./components/TeachingMode";
 import DemoLecture from "./components/DemoLecture";
+import JobOpening from "./components/JobOpening";
+
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
         <Route path="/teaching-mode" element={<TeachingMode />} />
         <Route path="/course-details/:courseId" element={<CourseDetails />} />
         <Route path="/demo-lecture" element={<DemoLecture />} />
+        <Route path="/job-openings" element={<JobOpening />} />
       </Routes>
     </Router>
   );

@@ -1,0 +1,29 @@
+/* Animation for the Job Openings Banner */
+@keyframes moveText {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  .job-banner {
+    width: 100%;
+    background-color: #ff5733;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .job-banner a {
+    display: inline-block;
+    animation: moveText 5s linear infinite;
+    text-decoration: none;
+    color: white;
+  }
+  

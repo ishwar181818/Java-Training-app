@@ -1,8 +1,16 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import "./Home.css"; 
 
 function Home() {
   return (
     <div className="container my-5">
+      {/* Moving Job Openings Banner */}
+      <div className="job-banner">
+        <Link to="/job-openings" className="text-white fw-bold">
+          🚀 Latest Job Openings - Click Here!
+        </Link>
+      </div>
       {/* Hero Section */}
       <div className="text-center mb-5">
         <h1 className="text-primary fw-bold">🚀 Master Java Backend Development!</h1>
