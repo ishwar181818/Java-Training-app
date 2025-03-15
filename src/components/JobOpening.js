@@ -19,7 +19,7 @@ export default function JobOpening() {
 
       {/* WhatsApp Button */}
       <a
-        href="https://wa.me/YOUR_PHONE_NUMBER?text=Hi!%20I%20want%20Job%20openings"
+        href="https://wa.me/7498660387?text=Hi!%20I%20want%20Job%20openings"
         target="_blank"
         rel="noopener noreferrer"
         className="btn btn-success btn-lg"
