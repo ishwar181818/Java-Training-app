@@ -7,14 +7,14 @@ export default function JobOpening() {
       <h1 className="text-primary fw-bold">🚀 Latest Job Openings</h1>
 
       {/* Informational Message */}
-      <p className="lead text-muted">
+      <p className="lead text-white">
         Though you are not part of our online program yet, we still provide job openings for all candidates seeking opportunities in software development.  
       </p>
 
       {/* WhatsApp Message Information */}
-      <p className="text-muted">
+      <p className="text-white">
         To get personalized job openings, connect with us on WhatsApp. Just send us a message:  
-        <span className="fw-bold"> "Hi! I want job openings"</span>, and our dedicated team will respond as soon as possible!  
+        <span className="fw-bold text-warning"> "Hi! I want job openings"</span>, and our dedicated team will respond as soon as possible!  
       </p>
 
       {/* WhatsApp Button */}
@@ -28,7 +28,7 @@ export default function JobOpening() {
       </a>
 
       {/* Navigation Guidance */}
-      <p className="text-muted mt-4">
+      <p className="text-light mt-4">
         If you want to know more about us, you can check the sections above regarding **course duration, demo lectures, teaching modes, notes**, and more.
       </p>
       <p className="text-danger fw-bold">
@@ -37,7 +37,7 @@ export default function JobOpening() {
       </p>
 
       {/* Closing Message */}
-      <p className="mt-4 text-secondary fw-bold">
+      <p className="mt-4 text-white fw-bold">
         Thanks for your time, and **Happy Coding!** 🚀💻  
       </p>
     </div>
