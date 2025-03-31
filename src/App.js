@@ -11,6 +11,7 @@ import DemoLecture from "./components/DemoLecture";
 import JobOpening from "./components/JobOpening";
 import AnalyticsTracker from "./components/AnalyticsTracker";
 import ReactGA from "react-ga4";
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
         <Route path="/demo-lecture" element={<DemoLecture />} />
         <Route path="/job-openings" element={<JobOpening />} />
       </Routes>
+      <Footer/>
     </Router>
   );
 }
