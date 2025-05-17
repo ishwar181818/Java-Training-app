@@ -11,7 +11,8 @@ function Footer() {
             <h4 className="fw-bold text-uppercase">About Us</h4>
             <p>
               Welcome to **Java Training Institute**, your gateway to a successful Java development career!  
-              We offer beginner to advanced-level courses, hands-on projects, and **100% job assistance**.
+              We offer comprehensive courses from beginner to advanced levels, along with hands-on projects and specialized training on the above topics. 
+              While our focus is on empowering you with the skills and knowledge you need, we also keep you updated on the latest job openings in the market to help you take the next step in your career.
             </p>
           </Col>
 
@@ -47,7 +48,7 @@ function Footer() {
             <ul className="list-unstyled">
               <li>📧 Email: <a href="mailto:support@javatraining.com" className="text-light text-decoration-none">ishwarharbade55@gmail.com</a></li>
               <li>📞 Phone: 7498660387</li>
-              <li>📍 Address: Upper Indira Nagar Bibwewadi Pune-440037</li>
+              <li>📍 Address: Upper Indira Nagar Bibwewadi Pune-411037</li>
             </ul>
           </Col>
         </Row>
