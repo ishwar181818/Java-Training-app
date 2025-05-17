@@ -17,25 +17,7 @@ function Home() {
         <p className="lead">Join our expert-led Java training program and become a job-ready backend developer.</p>
         <img src="https://media.istockphoto.com/id/1432248858/photo/smiling-male-programmer-explains-a-coding-technique-to-a-new-female-colleague-while-sitting.jpg?s=2048x2048&w=is&k=20&c=DXdzN7BEHb3FfQV9QLpe6cosgPpyc3IeYAMZQO9Ot18=" alt="Java Training" className="img-fluid rounded shadow-lg"/>
       </div>
-      {/* Floating Testimonials Section */}
-      {/* Floating Testimonials Section */}
-      <div className="floating-testimonials d-none d-md-block">
-  <div className="testimonial-scroll">
-    {[
-      { name: "Harsh Mishra", message: "Got complete training in Core Java — concepts were made crystal clear." },
-      { name: "Tushar Koli", message: "Spring Boot training was hands-on and easy to follow." },
-      { name: "Bhavana Berad", message: "Enjoyed learning REST APIs and how backend services work." },
-      { name: "Rohan Mahajan", message: "Learned OOPs concepts with simple and practical examples." },
-      { name: "Rahul Shirgaokar", message: "Exception handling and collections were explained very clearly." },
-      { name: "Suraj Sawant", message: "The training also covered loops, methods, and object-oriented thinking." }
-    ].map((testimonial, index) => (
-      <div className="testimonial-card" key={index}>
-        <p>“{testimonial.message}”</p>
-        <small>- {testimonial.name}</small>
-      </div>
-    ))}
-  </div>
-</div>
+      
 
 
       {/* Why Learn Java? */}

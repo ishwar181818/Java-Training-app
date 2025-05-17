@@ -13,6 +13,7 @@ import AnalyticsTracker from "./components/AnalyticsTracker";
 import ReactGA from "react-ga4";
 import Footer from "./components/Footer";
 import "./styles/Global.css"; // Import global styles
+import Testimonials from "./components/Testimonials";
 
 function App() {
   useEffect(() => {
@@ -41,6 +42,7 @@ function App() {
           <Route path="/course-details/:courseId" element={<CourseDetails />} />
           <Route path="/demo-lecture" element={<DemoLecture />} />
           <Route path="/job-openings" element={<JobOpening />} />
+          <Route path="/testimonials" element={<Testimonials />} />
         </Routes>
         <Footer />
       </div>
