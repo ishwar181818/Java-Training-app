@@ -39,14 +39,14 @@ function DemoLecture() {
       {/* Udemy Course Link */}
       <div className="text-center mt-4">
         <h3>🚀 Want Full Access to the Course?</h3>
-        <p>Click the button below to enroll in the **complete Spring Boot course on Udemy**.</p>
+        <p>Visit the YouTube channel for more free Spring Boot tutorials and updates</p>
         <a 
-          href="https://www.udemy.com/course/mastering-spring-boot-from-beginner-to-advanced/learn/lecture/48830643?utm_campaign=email&utm_medium=email&utm_source=sendgrid.com#overview" // Replace with your actual Udemy course link
+          href="https://www.youtube.com/@ishwarharbade-y7j" // Replace with your actual Udemy course link
           target="_blank"
           rel="noopener noreferrer"
-          className="btn btn-lg btn-success"
+          className="btn btn-lg btn-danger"
         >
-          🎓 Enroll Now on Udemy
+          🎬 Visit YouTube Channel
         </a>
       </div>
     </div>
