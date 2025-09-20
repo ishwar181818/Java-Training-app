@@ -34,7 +34,7 @@ function Home() {
       {/* Why Learn Java? */}
       <div className="row align-items-center my-5">
         <div className="col-md-6">
-          <img src="https://media.istockphoto.com/id/1347677777/photo/closeup-of-computer-programming-typing-on-laptop.jpg?s=2048x2048&w=is&k=20&c=a_iu15wuh0LWLBK1q7a4Y8yW3Rr4ggB4-Lp1dmsN9v4=" alt="Why Java" className="img-fluid rounded shadow-lg"/>
+          <img src="/Capture.jpg" alt="Why Java" className="img-fluid rounded shadow-lg"/>
         </div>
         <div className="col-md-6">
           <h2 className="text-success">🔥 Why Learn Java?</h2>
