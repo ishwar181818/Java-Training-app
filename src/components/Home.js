@@ -27,7 +27,7 @@ function Home() {
       <div className="text-center mb-5">
         <h1 className="text-primary fw-bold">🚀 Master Java Backend Development!</h1>
         <p className="lead">Join our expert-led Java training program and become a job-ready backend developer.</p>
-        <img src="https://media.istockphoto.com/id/1432248858/photo/smiling-male-programmer-explains-a-coding-technique-to-a-new-female-colleague-while-sitting.jpg?s=2048x2048&w=is&k=20&c=DXdzN7BEHb3FfQV9QLpe6cosgPpyc3IeYAMZQO9Ot18=" alt="Java Training" className="img-fluid rounded shadow-lg"/>
+        <img src="/training.jpeg" alt="Java Training" className="img-fluid rounded shadow-lg"/>
       </div>
       
 
