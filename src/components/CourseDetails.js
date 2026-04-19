@@ -8,7 +8,7 @@ const courseContent = {
     topics: [
       "✅ Core Java", "✅ OOPS", "✅ Exception Handling", 
       "✅ Spring", "✅ SpringBoot", "✅ Microservices", 
-      "✅ REST API Development", "✅ Java 8 Features", "✅ Postman Tool"
+      "✅ REST API Development", "✅ Java 8 Features","✅ Collections Framework", "✅ Postman Tool"
     ] 
   },
   2: { 
