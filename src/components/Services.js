@@ -5,7 +5,7 @@ const courses = [
   {
     id: 1,
     title: "Full Java Backend Development",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfP2_wDfsEVikxFSHTRl6JfyMiPVjZDF94rA&s",
+    image: "/Backend.jpg",
     description: "Learn Java, Spring Boot, Microservices & more!"
   },
   {
