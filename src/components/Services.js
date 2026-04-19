@@ -11,7 +11,7 @@ const courses = [
   {
     id: 2,
     title: "Core Java Training",
-    image: "https://sathyatech.com/wp-content/uploads/2023/10/Core-Java.png",
+    image: "/CoreJava.png",
     description: "Master Java basics, OOPS, and Collections."
   }
 ];
