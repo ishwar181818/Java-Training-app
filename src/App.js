@@ -25,7 +25,7 @@ function App() {
       {/* Background Video */}
       <div className="video-background">
         <video autoPlay loop muted playsInline>
-          <source src="/back.mp4" type="video/mp4" />
+          <source src="https://drive.google.com/uc?export=download&id=1Yv8KsbAEVbLxCYNFMWj0R9zHHl3yiUwl" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
