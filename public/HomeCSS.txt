@@ -1,0 +1,55 @@
+/* Animation for the Job Openings Banner */
+@keyframes moveText {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  .job-banner {
+    width: 100%;
+    background-color: #ff5733;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .job-banner a {
+    display: inline-block;
+    animation: moveText 5s linear infinite;
+    text-decoration: none;
+    color: white;
+  }
+
+  .testimonial-container {
+  height: 200px; /* Adjust height as needed */
+  overflow: hidden;
+  position: relative;
+}
+
+.testimonial-wrapper {
+  display: flex;
+  flex-direction: column;
+  animation: scrollUp 20s linear infinite;
+}
+
+.testimonial-card {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+@keyframes scrollUp {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}

@@ -1,151 +1,161 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Home.css"; 
+import "./Home.css";
 
 function Home() {
   return (
-    <div className="container my-5">
-      {/* Moving Job Openings Banner */}
-      <div className="job-banner">
-        <Link to="/job-openings" className="text-white fw-bold">
-          🚀 Latest Job Openings - Click Here!
+    <div className="home-page">
+      {/* Announcement bar */}
+      <div className="announce-bar">
+        <Link to="/job-openings" className="announce-link">
+          🚀&nbsp; New openings for Java backend roles — view now
         </Link>
       </div>
 
-      {/* Advertisement Banner */}
-      <div className="advertisement-banner bg-warning text-dark text-center py-3 rounded shadow-lg my-4">
-        <h4 className="fw-bold">📢 Java Coding Batches Starting Soon!</h4>
-        <p className="mb-2">
-          We only want <strong>3 months of your dedication</strong> to learn.
+      {/* Hero */}
+      <section className="hero">
+        <video
+          className="hero-bg-video"
+          src="/xyz.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+        />
+        <div className="hero-overlay"></div>
+        <div className="hero-content">
+        <p className="hero-kicker">Java Backend Training</p>
+        <h1 className="hero-title">
+          Learn Java. Build backends.<br />
+          <span className="hero-gradient">Get hired.</span>
+        </h1>
+        <p className="hero-sub">
+          A hands-on, mentor-led program that takes you from Java fundamentals
+          to a job-ready backend developer — Spring Boot, REST APIs, and real
+          projects included.
         </p>
-        <p className="mb-2">
-          Interested? Go in the <strong>Quick Links Section at the Bottom of the page  → Click on Contact option</strong> to get in touch with us.
-        </p>
-      </div>
-
-      {/* Hero Section */}
-      <div className="text-center mb-5">
-        <h1 className="text-primary fw-bold">🚀 Master Java Backend Development!</h1>
-        <p className="lead">Join our expert-led Java training program and become a job-ready backend developer.</p>
-        <img src="/training.jpeg" alt="Java Training" className="img-fluid rounded shadow-lg"/>
-      </div>
-      
-
-      {/* Why Learn Java? / System Requirements */}
-      <div className="row align-items-center my-5"> 
-        {/* Image Side */}
-        <div className="col-md-6">
-          <img 
-            src="/Capture.jpg" 
-            alt="Why Java" 
-            className="img-fluid rounded shadow-lg w-100" 
-            style={{ 
-              height: "auto",      // Allows full image to show
-              maxHeight: "500px",  // Prevents it from being too huge
-              objectFit: "contain", // Ensures no part of the text in image is cut
-              backgroundColor: "#000" // Fills gaps with black if image is shorter
-            }}
-          />
+        <div className="hero-actions">
+          <Link to="/services" className="btn-primary">Explore courses</Link>
+          <Link to="/job-openings" className="btn-text">See job openings ›</Link>
         </div>
+        <div className="hero-media">
+          <img src="/training.jpeg" alt="Java Training" className="hero-image" />
+        </div>
+        </div>
+      </section>
 
-        {/* Content Side */}
-        <div className="col-md-6">
-          <div className="card shadow-lg border-0" style={{ minHeight: "100%" }}>
-            <div className="card-body p-4">
-              <h2 className="text-success fw-bold mb-4">🔥 Why Learn Java?</h2>
-              <ul className="list-group list-group-flush">
-                <li className="list-group-item border-0 px-0">✅ Java is one of the <strong>most in-demand</strong> programming languages globally.</li>
-                <li className="list-group-item border-0 px-0">✅ Powers <strong>Enterprise Applications, Android Apps, and Web Backends</strong>.</li>
-                <li className="list-group-item border-0 px-0">✅ <strong>Platform Independent</strong> – "Write Once, Run Anywhere" (WORA).</li>
-                <li className="list-group-item border-0 px-0">✅ Backed by <strong>top tech giants</strong> like Google, Amazon, and Netflix.</li>
-                <li className="list-group-item border-0 px-0">✅ Massive ecosystem with <strong>Spring Boot & Microservices</strong>.</li>
-                <li className="list-group-item border-0 px-0">✅ Strong <strong>Multi-threading</strong> for high-performance apps.</li>
-                <li className="list-group-item border-0 px-0">✅ High <strong>Salary Potential</strong> for backend developers.</li>
-                <li className="list-group-item border-0 px-0">✅ Robust <strong>Community Support</strong> and endless libraries.</li>
-              </ul>
-            </div>
+      {/* Promo strip */}
+      <section className="promo-strip">
+        <div className="promo-inner">
+          <p className="promo-title">Java coding batches starting soon</p>
+          <p className="promo-text">
+            Just three months of dedication stands between you and a backend
+            developer role. Head to the Quick Links section at the bottom of
+            the page and select Contact to reserve your seat.
+          </p>
+        </div>
+      </section>
+
+      {/* Why Java */}
+      <section className="spotlight">
+        <div className="spotlight-grid">
+          <div className="spotlight-media">
+            <img src="/Capture.jpg" alt="Why Java" className="spotlight-image" />
+          </div>
+          <div className="spotlight-copy">
+            <h2>Why learn Java</h2>
+            <ul className="plain-list">
+              <li>One of the most in-demand programming languages globally</li>
+              <li>Powers enterprise applications, Android apps, and web backends</li>
+              <li>Platform independent — write once, run anywhere</li>
+              <li>Backed by companies like Google, Amazon, and Netflix</li>
+              <li>A deep ecosystem built around Spring Boot and microservices</li>
+              <li>Strong multi-threading for high-performance applications</li>
+              <li>Strong salary potential for backend developers</li>
+              <li>A large, active community and endless open-source libraries</li>
+            </ul>
           </div>
         </div>
-      </div>
+      </section>
 
-      {/* Why Choose Us? */}
-      <div className="text-center my-5">
-        <h2 className="text-primary fw-bold">Why Choose Our Java Training? 🏆</h2>
-        <p className="lead">We provide hands-on training, real-world projects, and expert mentorship.</p>
-      </div>
-      
-
-      {/* Features Section - UPDATED TO BE IN ONE ROW */}
-      <div className="row text-center g-4"> 
-        <div className="col-md-4">
-          <div className="card h-100 shadow-lg">
-            <img src="/trainer.jpg" alt="Expert Trainers" className="card-img-top"/>
-            <div className="card-body">
-              <h5 className="card-title">Expert Trainers</h5>
-              <p className="card-text">Learn from <strong>industry experts</strong> with <strong>10+ years of experience</strong>.</p>
-            </div>
+      {/* Features */}
+      <section className="features">
+        <div className="section-head">
+          <h2>Why train with us</h2>
+          <p>Hands-on practice, real mentorship, and a clear path to hire.</p>
+        </div>
+        <div className="feature-grid">
+          <div className="feature-tile">
+            <img src="/trainer.jpg" alt="Expert Trainers" />
+            <h3>Expert trainers</h3>
+            <p>Learn from industry practitioners with over ten years of experience.</p>
+          </div>
+          <div className="feature-tile">
+            <img src="/laptop.jpg" alt="Hands-on Training" />
+            <h3>Hands-on training</h3>
+            <p>Work on live projects and build applications you can actually ship.</p>
+          </div>
+          <div className="feature-tile">
+            <img src="/vacancy.jpg" alt="Job Support" />
+            <h3>Job assistance</h3>
+            <p>Get placement support and career guidance to land your first role.</p>
           </div>
         </div>
-        
-        <div className="col-md-4">
-          <div className="card h-100 shadow-lg">
-            <img src="/laptop.jpg" alt="Hands-on Training" className="card-img-top"/>
-            <div className="card-body">
-              <h5 className="card-title">Hands-on Training</h5>
-              <p className="card-text">Work on <strong>live projects</strong> and master <strong>real-world applications</strong>.</p>
-            </div>
+      </section>
+
+      {/* Curriculum spec sheet */}
+      <section className="curriculum">
+        <div className="section-head">
+          <h2>What you'll cover</h2>
+          <p>A complete path from fundamentals to a hireable skill set.</p>
+        </div>
+        <div className="spec-sheet">
+          <div className="spec-row">
+            <span className="spec-num">01</span>
+            <div><h4>Java backend foundations</h4><p>Complete Java backend, from scratch to advanced.</p></div>
+          </div>
+          <div className="spec-row">
+            <span className="spec-num">02</span>
+            <div><h4>Spring Boot & microservices</h4><p>In-depth architecture and service design.</p></div>
+          </div>
+          <div className="spec-row">
+            <span className="spec-num">03</span>
+            <div><h4>REST APIs & databases</h4><p>Mastering REST APIs and database integration.</p></div>
+          </div>
+          <div className="spec-row">
+            <span className="spec-num">04</span>
+            <div><h4>Hibernate, JPA & SQL</h4><p>Hands-on persistence and query practice.</p></div>
+          </div>
+          <div className="spec-row">
+            <span className="spec-num">05</span>
+            <div><h4>Deployment & cloud basics</h4><p>Real-world deployment fundamentals.</p></div>
+          </div>
+          <div className="spec-row">
+            <span className="spec-num">06</span>
+            <div><h4>Mentorship & code review</h4><p>One-on-one mentorship and code review sessions.</p></div>
+          </div>
+          <div className="spec-row">
+            <span className="spec-num">07</span>
+            <div><h4>Mock interviews & resume</h4><p>Mock interviews and professional resume building.</p></div>
+          </div>
+          <div className="spec-row">
+            <span className="spec-num">08</span>
+            <div><h4>Interview prep library</h4><p>Access to a premium interview question bank.</p></div>
           </div>
         </div>
-
-        <div className="col-md-4">
-          <div className="card h-100 shadow-lg">
-            <img src="/vacancy.jpg" alt="Job Support" className="card-img-top"/>
-            <div className="card-body">
-              <h5 className="card-title">Job Assistance</h5>
-              <p className="card-text">Get a <strong>Job Assistance</strong> & <strong>career guidance</strong> to land your dream job.</p>
-            </div>
-          </div>
+        <div className="curriculum-media">
+          <img src="/bench.jpg" alt="Course Highlights" />
         </div>
-      </div>
+      </section>
 
-      {/* Course Highlights */}
-      <div className="row align-items-stretch my-5"> {/* 'align-items-stretch' ensures equal height */}
-        <div className="col-md-6">
-          <div className="card h-100 shadow-lg border-0">
-            <div className="card-body d-flex flex-column justify-content-center p-4">
-              <h2 className="text-danger fw-bold mb-4">📌 Course Highlights</h2>
-              <ul className="list-group list-group-flush">
-                <li className="list-group-item border-0 px-0">✅ <strong>Complete Java Backend</strong> from scratch to advanced.</li>
-                <li className="list-group-item border-0 px-0">✅ In-depth <strong>Spring Boot & Microservices</strong> architecture.</li>
-                <li className="list-group-item border-0 px-0">✅ Mastering <strong>REST APIs</strong> and Database Integration.</li>
-                <li className="list-group-item border-0 px-0">✅ Hands-on with <strong>Hibernate, JPA, and SQL</strong>.</li>
-                <li className="list-group-item border-0 px-0">✅ Real-world <strong>Deployment & Cloud Basics</strong>.</li>
-                <li className="list-group-item border-0 px-0">✅ <strong>1-on-1 Mentorship</strong> and code review sessions.</li>
-                <li className="list-group-item border-0 px-0">✅ <strong>Mock Interviews</strong> & Professional Resume building.</li>
-                <li className="list-group-item border-0 px-0">✅ Access to <strong>Premium Interview Question Banks</strong>.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div className="col-md-6">
-          <img 
-            src="/bench.jpg" 
-            alt="Course Highlights" 
-            className="img-fluid rounded shadow-lg h-100 w-100" 
-            style={{ objectFit: "cover" }} 
-          />
-        </div>
-      </div>
-
-      {/* Call to Action */}
-      <div className="text-center mt-5">
-        <h3 className="text-success">🎯 Ready to Become a Java Backend Developer?</h3>
-        <p className="lead">Enroll today and take your career to the next level!</p>
-        <a href="/services" className="btn btn-lg btn-primary">Explore Courses</a>
-      </div>
-      
+      {/* Closing CTA */}
+      <section className="closing-cta">
+        <h2>Ready to become a Java backend developer?</h2>
+        <p>Enroll today and take your career to the next level.</p>
+        <Link to="/services" className="btn-primary btn-large">Explore courses</Link>
+      </section>
     </div>
-  ); 
+  );
 }
 
 export default Home;
