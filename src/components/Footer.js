@@ -47,7 +47,7 @@ function Footer() {
             <h5 className="fw-bold text-uppercase">Contact Us</h5>
             <ul className="list-unstyled">
               <li>📧 Email: <a href="mailto:support@javatraining.com" className="text-light text-decoration-none">ishwarharbade55@gmail.com</a></li>
-              <li>📞 Phone: 7498660387</li>
+              <li>📞 Phone: 749866XXXX</li>
               <li>📍 Address: Upper Indira Nagar Bibwewadi Pune-411037</li>
             </ul>
           </Col>
